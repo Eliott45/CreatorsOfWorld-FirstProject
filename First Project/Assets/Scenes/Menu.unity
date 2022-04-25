@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nameRoomTxt: {fileID: 631983363}
-  _leaveButton: {fileID: 0}
+  _leaveButton: {fileID: 880646968}
 --- !u!1 &406139250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,11 +1131,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 625181fdacf4b02489489dc37a59c692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _lobbyItemPrefab: {fileID: 1706664906, guid: c62f3ce17a7ae144ab8502506fb6eb44, type: 3}
   _lobbyView: {fileID: 325633789}
   _createButton: {fileID: 1572152619}
   _joinButton: {fileID: 893387970}
   _createInput: {fileID: 11134287}
   _joinInput: {fileID: 1299762425}
+  _scrollContent: {fileID: 1764609430}
 --- !u!1 &765836160
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,15 +2708,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
+    m_Left: 5
+    m_Right: 5
+    m_Top: 10
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 10
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
+  m_ChildControlWidth: 1
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
@@ -3254,7 +3256,7 @@ GameObject:
   - component: {fileID: 2077829034}
   - component: {fileID: 2077829033}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: LobbyTipTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
