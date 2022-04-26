@@ -22,15 +22,26 @@ namespace UI
             Unsubscribe();
         }
 
+        public override void OnLeftRoom()
+        {
+            base.OnLeftRoom();
+            Hide();
+        }
+
         public void Show()
         {
             gameObject.SetActive(true);
             _nameRoomTxt.SetText($"Room: {PhotonNetwork.CurrentRoom.Name}");
         }
 
-        private void LeaveLobby()
+        private void Hide()
         {
-            
+            gameObject.SetActive(false);
+        }
+
+        private static void LeaveLobby()
+        {
+            PhotonNetwork.LeaveRoom();
         }
 
         private void Subscribes()
