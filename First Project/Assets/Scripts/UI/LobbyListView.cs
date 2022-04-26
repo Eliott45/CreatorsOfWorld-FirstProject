@@ -26,7 +26,6 @@ namespace UI
         
         public override void OnJoinedRoom()
         {
-            // PhotonNetwork.LoadLevel(2);
             _lobbyView.Show();
         }
 
@@ -34,6 +33,12 @@ namespace UI
         {
             base.OnRoomListUpdate(roomList);
             UpdateLobbyList(roomList);
+        }
+
+        public override void OnConnectedToMaster()
+        {
+            base.OnConnectedToMaster();
+            PhotonNetwork.JoinLobby();
         }
 
         public override void OnDisable()

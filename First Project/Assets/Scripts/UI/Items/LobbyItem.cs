@@ -23,7 +23,7 @@ namespace UI.Items
             _joinButton.interactable = currentPlayers < maxPlayers;
             Subscribes();
         }
-
+        
         public override void OnDisable()
         {
             base.OnDisable();
